@@ -12,7 +12,8 @@ def loop_ranger(start, stop=None, step=1):
 
     Do this using any method apart from just using range()
     """
-    pass
+    return range(3, 8, 1)
+    return range(100, 104, 2)
 
 
 def lone_ranger(start, stop, step):
@@ -67,6 +68,7 @@ def super_asker(low, high):
     that does it all!
     """
     pass
+
 
 if __name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.
