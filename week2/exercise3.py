@@ -245,16 +245,13 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    the_pyramid = []
-
+    pyramid = []
     for i in range(5):
-        row = []
-        for j in range(1+i+1):
-            row.append(str(j))
-        the_pyramid.append(row)
+        row = '{0}{1}{0}'.format(' '*(5-i-1), '*'*(i*2+1))
+        pyramid.append(list(row))
 
-    print (the_pyramid)
-    return the_pyramid
+    print (pyramid)
+    return pyramid
 
 
 def lp(some_kind_of_list, exercise_name):
